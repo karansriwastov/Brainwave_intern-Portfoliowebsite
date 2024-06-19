@@ -11,9 +11,9 @@
     <div class="sidebar sidebarGo">
         <nav>
             <ul>
-                <li><a href="/"> Home</a> </li>
+                <li><a href="index.html"> Home</a> </li>
                 <li><a href="intro.html">My intro</a></li>
-                <li><a href="services.html">Services</a></li>
+                <!-- <li><a href="services.html">Services</a></li> -->
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
             </ul>
@@ -26,26 +26,26 @@
         </div>
         <div class="contactform">
             <h1>Contact me for work/general enquiries</h1>
-            <form>
+            <form action="https://formspree.io/f/xkndddlj" method="POST">
                 <div class="mb-3">
                     <label for="clientname" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="clientname">
+                    <input type="text" class="form-control" id="clientname" required placeholder="Type your name">
                   </div>
                 <div class="mb-3">
                   <label for="clientmail" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="clientmail" aria-describedby="emailHelp">
+                  <input type="email" class="form-control" id="clientmail" aria-describedby="emailHelp" required placeholder="Please enter a valid email address">
                   <div id="emailHelp" class="form-text">We'll never share your personal details with anyone else.</div>
                 </div>
                 <div class="mb-3">
                   <label for="clientphone" class="form-label">Phone</label>
-                  <input type="phone" class="form-control" id="clientphone">
+                  <input type="phone" class="form-control" id="clientphone" required>
                 </div>
                 <div class="mb-3">
                     <label for="clientenquiry" class="form-label">Enquiry</label>
-                    <input type="text" class="form-control" id="clientname">
+                    <input type="text" class="form-control" id="clientname" required>
                   </div>
                 <divclass="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="isclient">
+                  <input type="checkbox" class="form-check-input" id="isclient" required>
                   <label class="form-check-label" for="isclient">Wants to do any project with me.</label><br>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </divclass>
